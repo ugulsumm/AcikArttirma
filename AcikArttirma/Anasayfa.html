@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Açık Arttırma</title>
+        <script src="jquery-3.5.1.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <style>
+            .navbar {
+                opacity: 0.8;
+                border-bottom: 1px solid #fff;
+            }
+        </style>
+    </head>
+
+    <body class="container my-4" style="background-color: hsla(89, 43%, 51%, 0.3)" id="body">
+        
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top" style="background-color: #B0C4DE">
+            <div class="container">
+                <a href="Anasayfa.html" class="navbar-brand">
+                    <i class="fas fa-blog"></i>&nbsp;Ana Sayfa <!--&nbsp; boşluk ekledi-->
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>    
+                
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="AcikArttirmaBaslat.html" class="nav-link active">
+                            Açık Arttırma Başlat
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            Hakkımızda
+                        </a>
+                    </li>
+                </ul>
+                </div>
+
+            </div>    
+        </nav>    
+        
+
+        <form id="soneklenenler" name="aktif">
+        <br>
+        <div class="container my-4" style="height: 50px; background-color: #B0C4DE" id="bas">
+            <label class="">Açık Arttırmalar</label>
+            <br><br>
+        </div>
+
+        <main>
+
+            <div id="yeniEkran"></div>
+            <div id="teklif"></div>
+
+            <div class="container" id="container">
+                <div class="row" id="row">                            
+
+                </div>
+            </div>  
+
+        </main>
+
+        </form>
+
+
+
+
+        
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+
+        <script src="Anasayfa.js"></script>
+        
+
+    </body>
+</html>
